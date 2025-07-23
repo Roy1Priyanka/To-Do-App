@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+
+/* Global Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-primary: #1b2c75;
+  --color-secondary: #0135a4;
+}
+
+/* Body Styling */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-size: cover;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+/* Theme Switcher Button */
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+}
+
+/* Main App Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  max-width: 960px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1px;
+  padding: 28px;
+  margin: 50px auto;
+}
+
+/* Header Section */
+.container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.author-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Alert Message */
+.alert-message {
+  width: 100%;
+  transition: all 0.3s ease;
+  transform: scale(0.9);
+}
+
+.alert-message.show {
+  display: block;
+  transform: scale(1);
+}
+
+.alert-message.hide {
+  display: none;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.input-section input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Filter and Delete */
+.todos-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+/* Task List */
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 54vh;
+  overflow-y: auto;
+}
+
+/* Individual Task */
+.todos-list .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.2s ease;
+}
+
+.todos-list .todo-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.todo-item p {
+  margin-right: 10px;
+}
+
+/* Task Actions */
+.todo-item .todo-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Footer */
+.author-text {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-section input,
+  .input-section button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .todos-filter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}
