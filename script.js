@@ -11,7 +11,7 @@ class UIManager {
 
     this.addEventListeners();
     this.showAllTodos();
-    this.checkReminders(); // 🔔 Show reminders on load
+    this.checkReminders(); 
   }
 
   addEventListeners() {
@@ -141,7 +141,6 @@ class UIManager {
     }, 3000);
   }
 
-  // 🔔 Reminder Feature
   checkReminders() {
     const today = new Date().toISOString().split("T")[0];
     const dueToday = this.todoManager.todos.filter(
