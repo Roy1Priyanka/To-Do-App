@@ -1,4 +1,4 @@
-# 📋 To-Do App
+**# 📋 To-Do App**
 
 A sleek, responsive, and interactive To-Do List app built using HTML, CSS, and JavaScript. It helps users manage daily tasks efficiently with features like task creation, deletion, and filtering.
 
@@ -16,7 +16,7 @@ A sleek, responsive, and interactive To-Do List app built using HTML, CSS, and J
 
 -  Clear All Tasks Button
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 
 - HTML
 
@@ -24,22 +24,13 @@ A sleek, responsive, and interactive To-Do List app built using HTML, CSS, and J
 
 - JavaScript
 
-📸 Screenshot
+**📸 Screenshot**
 
 ![Todo App Screenshot](https://github.com/Roy1Priyanka/To-Do-App/blob/main/Demo.png)
 
-🌐 Live Demo
+**🌐 Live Demo**
 
-🔗 Click here to try it on Netlify
-<sub>(Replace with your real Netlify link)</sub>
+🔗 [Click here to try it](https://todo-webap.netlify.app/)
 
 
-🧪 How to Run
 
-- Clone the repository
-
-- Open index.html in any modern browser
-
-- Use the app.
-
-  
