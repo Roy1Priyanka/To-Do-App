@@ -25,7 +25,8 @@ A sleek, responsive, and interactive To-Do List app built using HTML, CSS, and J
 - JavaScript
 
 📸 Screenshot
-<sub>(Replace with your own if you want)</sub>
+
+<sub>(https://github.com/Roy1Priyanka/To-Do-App/blob/main/Demo.png)</sub>
 
 🌐 Live Demo
 
